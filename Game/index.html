@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="../Game/style.css">
+</head>
+<body>
+    <canvas id="snakeCanvas" width="400" height="400"></canvas>
+    <div id="gameOverModal">
+        <h2>Game Over!</h2>
+        <p id="score">Your score: 0</p>
+        <button id="startAgainBtn">Start Again</button>
+        <button id="goToLandingPageBtn">Go to Landing Page</button>
+        
+        <button class="speed-btn" data-speed="100">Normal</button>
+        <button class="speed-btn" data-speed="50">Hard</button>
+        <button class="speed-btn" data-speed="200">Easy</button>
+    </div>
+    <script src="../JavaScript/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'SuperDream';
+    src: url('../Fonts/SuperDream-ax3vE.ttf') format('truetype');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'SuperDream';
+    overflow-y: auto;
+}
+
+.header {
+    position: relative;
+    height: 0;
+}
+
+.header img {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    height: auto;
+    transition: top 0.5s, right 0.5s, opacity 0.5s;
+    opacity: 1;
+}
+
+.landing-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 5, 73, 0.9), rgba(0, 0, 0, 0.656)), url('../Images/placeholder.jpg') center/cover no-repeat;
+    color: #fff;
+    opacity: 0;
+    animation: fadeIn 5s ease-in-out forwards;
+}
+
+h1,
+p,
+button {
+    margin: 1rem;
+    width: 30%;
+    text-align: center;
+    padding: 1.5rem;
+    opacity: 0;
+    animation: fadeInText 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateY(1rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+button {
+    padding: 1rem;
+    font-size: 12px;
+    cursor: pointer;
+    height: 50px;
+    width: 150px;
+    background-color: whitesmoke;
+    color: #000000;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+button:hover {
+    font-size: 14px;
+    background: linear-gradient(rgba(0, 5, 73), rgb(140, 0, 95));
+    color: #fff;
+}

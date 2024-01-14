@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="../About/style.css">
+</head>
+<body>
+    <div class="header">
+        <img id="logo" src="../Images/logoSnake.gif" alt="Logo">
+    </div>
+    <div class="landing-page">
+        <h1>Snake App by Klaudia</h1>
+        <p>Experience the classic Snake Game brought to you by Klaudia. Control the snake, devour the apples, and grow longer to achieve the highest score. Navigate through the challenges and have a great time!</p>
+        <button id="startGameBtn">Let's go!</button>
+    </div>
+    <script src="../JavaScript/landing.js"></script>
+    <script>
+        document.getElementById("startGameBtn").addEventListener("click", function() {
+            window.location.href = "https://denertova.github.io/SnakeApp/Game/";
+        });
+    </script>
+</body>
+</html>
